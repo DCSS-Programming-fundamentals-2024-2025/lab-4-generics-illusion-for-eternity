@@ -1,4 +1,6 @@
-﻿namespace generics.Interfaces
+﻿using System.Diagnostics.Contracts;
+
+namespace generics.Interfaces
 {
     public interface IRepository<TEntity, TKey>
     {
@@ -7,4 +9,9 @@
         IEnumerable<TEntity> GetAll();
         void Remove(TKey id);
     }
+
+
+
+
 }
+
